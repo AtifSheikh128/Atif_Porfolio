@@ -5,8 +5,8 @@
     <met#aeb3b8et="utf-8">
         <title>M Atif Engr</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+        <meta content="Portfolio atif" name="keywords">
+        <meta content="Portfolio atif" name="description">
 
         <!-- Favicon -->
         <link href="img/profile.jpg.png" rel="icon">
@@ -29,7 +29,7 @@
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
+        <!--  Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -526,7 +526,6 @@
                         <a class="text-light px-3" href="#">Help</a>
                     </div>
 
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     <p class="m-0">&copy; All Rights Reserved. Designed by <a href="index.html">Engr. M
                             Atif</a></p>
                 </div>
@@ -556,8 +555,36 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
+    <!-- Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("contextmenu", function (event) {
+          event.preventDefault(); // Disable right-click
+        });
+      
+        document.addEventListener("keydown", function (event) {
+          // Disable common shortcuts
+          if (
+            event.ctrlKey && (event.key === "u" || event.key === "U") || // View Source
+            event.ctrlKey && (event.key === "s" || event.key === "S") || // Save Page
+            event.ctrlKey && event.shiftKey && (event.key === "i" || event.key === "I") || // DevTools
+            event.ctrlKey && event.shiftKey && (event.key === "j" || event.key === "J") || // DevTools
+            event.ctrlKey && event.key === "p" || // Print
+            event.key === "F12" // DevTools
+          ) {
+            event.preventDefault();
+          }
+        });
+      
+        document.addEventListener("dragstart", function (event) {
+          event.preventDefault();
+        });
+      
+        document.addEventListener("drop", function (event) {
+          event.preventDefault();
+        });
+      </script>
+      
 </body>
 
 </html>
